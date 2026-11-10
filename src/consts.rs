@@ -1,0 +1,40 @@
+use lsp_types::{SemanticTokenModifiers, SemanticTokenTypes};
+
+pub const SEMANTIC_TOKEN_TYPES: [SemanticTokenTypes; 23] = [
+    SemanticTokenTypes::Namespace,
+    SemanticTokenTypes::Type,
+    SemanticTokenTypes::Class,
+    SemanticTokenTypes::Enum,
+    SemanticTokenTypes::Interface,
+    SemanticTokenTypes::Struct,
+    SemanticTokenTypes::TypeParameter,
+    SemanticTokenTypes::Parameter,
+    SemanticTokenTypes::Variable,
+    SemanticTokenTypes::Property,
+    SemanticTokenTypes::EnumMember,
+    SemanticTokenTypes::Event,
+    SemanticTokenTypes::Function,
+    SemanticTokenTypes::Method,
+    SemanticTokenTypes::Macro,
+    SemanticTokenTypes::Keyword,
+    SemanticTokenTypes::Modifier,
+    SemanticTokenTypes::Comment,
+    SemanticTokenTypes::String,
+    SemanticTokenTypes::Number,
+    SemanticTokenTypes::Regexp,
+    SemanticTokenTypes::Operator,
+    SemanticTokenTypes::Decorator,
+];
+
+pub const SEMANTIC_TOKEN_MODIFIERS: [SemanticTokenModifiers; 10] = [
+    SemanticTokenModifiers::Declaration,
+    SemanticTokenModifiers::Definition,
+    SemanticTokenModifiers::Readonly,
+    SemanticTokenModifiers::Static,
+    SemanticTokenModifiers::Deprecated,
+    SemanticTokenModifiers::Abstract,
+    SemanticTokenModifiers::Async,
+    SemanticTokenModifiers::Modification,
+    SemanticTokenModifiers::Documentation,
+    SemanticTokenModifiers::DefaultLibrary,
+];

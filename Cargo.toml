@@ -1,0 +1,21 @@
+[package]
+name = "tree-sitter-semantic-tokens"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+tree-sitter = "0.27.2"
+tree-sitter-highlight = "0.27.2"
+# tree-sitter-rshtml = { path = "../tree-sitter-rshtml" }
+tree-sitter-rshtml = { git = "https://github.com/rshtml/tree-sitter-rshtml.git", tag = "v0.1.7" }
+tree-sitter-html = "0.23.2"
+tree-sitter-rust = "0.24.2"
+lsp-types = { version = "0.11.0", package = "gen-lsp-types", features = [
+    "url",
+] }
+wasm-bindgen = "0.2.130"
+serde-wasm-bindgen = "0.6.5"
+js-sys = "0.3.107"

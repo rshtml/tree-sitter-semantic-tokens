@@ -1,0 +1,5 @@
+[build]
+target = "wasm32-unknown-unknown"
+
+[env]
+CFLAGS_wasm32_unknown_unknown = "-isystem /usr/include/wasm32-wasi -D__wasi__ -D_WASI_EMULATED_MMAN -D_WASI_EMULATED_SIGNAL -D_WASI_EMULATED_PROCESS_CLOCKS"
